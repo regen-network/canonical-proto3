@@ -53,11 +53,13 @@ can use 0, 3, 6 or 9 digits in JSON output. For a simple deterministic encoding,
 *Please submit a [PR](https://github.com/regen-network/canonical-proto3/pulls) if you have implementation details to
 add to this list.*
 
-**Levels**
+Implementations should specify one of the following levels of alignment:
 * Level 1: there are clear rules to follow in order to make this implementation follow CER
 * Level 2: this implementation has explicity code generation flags or static linting tools for safely supporting CER
 * Level 3: this implementation provides a zero-allocation "is_canonical" or "unmarshal_canonical" method for checking
 if a message is canonical
+
+Note that level 1 and 2 implementations can still verify that a message is canonical by re-encoding it canonically and comparing.
 
 ### [gogo protobuf](https://github.com/gogo/protobuf) - Level 1
 
