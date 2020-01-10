@@ -39,6 +39,12 @@ do not understand which is likely the safest and most correct behavior in most c
 *Please submit a [PR](https://github.com/regen-network/canonical-proto3/pulls) if you have implementation details to
 add to this list.*
 
+**Levels**
+* Level 1: there are clear rules to follow in order to make this implementation follow CER
+* Level 2: this implementation has explicity code generation flags or static linting tools for safely supporting CER
+* Level 3: this implementation provides a zero-allocation "is_canonical" or "unmarshal_canonical" method for checking
+if a message is canonical
+
 ### [gogo protobuf](https://github.com/gogo/protobuf)
 
 gogo proto mostly follows canonical encoding rules with the caveats listed below.
