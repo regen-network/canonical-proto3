@@ -45,7 +45,7 @@ add to this list.*
 * Level 3: this implementation provides a zero-allocation "is_canonical" or "unmarshal_canonical" method for checking
 if a message is canonical
 
-### [gogo protobuf](https://github.com/gogo/protobuf)
+### [gogo protobuf](https://github.com/gogo/protobuf) - Level 1
 
 gogo proto mostly follows canonical encoding rules with the caveats listed below.
 
