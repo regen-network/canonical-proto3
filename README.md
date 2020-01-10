@@ -34,6 +34,18 @@ version of a protocol can send messages to transaction processors which understa
 causing a problem. Transaction processors would also reject messages intended for a later version of the protocol which they
 do not understand which is likely the safest and most correct behavior in most cases.
 
+## JSON
+
+In addition to the rules below, signable canonical protobuf JSON must follow https://gibson042.github.io/canonicaljson-spec/.
+
+### No default/empty values
+
+Remove all fields whose value is `0`, `false`, `""`, `null`, `[]`, or `{}`.
+
+### `Timestamp` should use 9 fractional digits
+
+### `Duration` should use 9 fractional digits
+
 ## Implementations
 
 *Please submit a [PR](https://github.com/regen-network/canonical-proto3/pulls) if you have implementation details to
