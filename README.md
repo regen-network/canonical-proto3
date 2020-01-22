@@ -45,7 +45,7 @@ Remove all fields whose value is `0`, `false`, `""`, `null`, `[]`, or `{}`.
 ### `Timestamp` and `Duration` should use 9 fractional digits
 
 The [proto3 JSON specification](https://developers.google.com/protocol-buffers/docs/proto3#json) states that these types
-can use 0, 3, 6 or 9 digits in JSON output. For a simple deterministic encoding, we specificy the most precise of these
+can use 0, 3, 6 or 9 digits in JSON output. For a simple deterministic encoding, we specify the most precise of these
 9 digits.
 
 ## Implementations
