@@ -48,6 +48,11 @@ The [proto3 JSON specification](https://developers.google.com/protocol-buffers/d
 can use 0, 3, 6 or 9 digits in JSON output. For a simple deterministic encoding, we specify the most precise of these
 9 digits.
 
+### Do not use lowerCamelCase names
+
+This creates unnecessary discrepancies between proto field names and their JSON representation and could lead to weird conflicts
+(if someone was foolish enough to define both myField and my_field).
+
 ## Implementations
 
 *Please submit a [PR](https://github.com/regen-network/canonical-proto3/pulls) if you have implementation details to
